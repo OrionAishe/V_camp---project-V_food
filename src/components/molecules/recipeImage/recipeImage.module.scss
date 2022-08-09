@@ -1,0 +1,31 @@
+.Image{
+    position: relative;
+    width: 70%;
+    height: max-content;
+
+
+    &__Background{
+    width: 840px;
+    height: 600px;
+    border-radius: 30px;
+    }
+
+    &__Play{
+        position: absolute;
+        top: 240px;
+        left: 360px;
+        border-radius: 60px;
+        backdrop-filter: blur(20px);
+    }
+
+    .Play{
+
+        &__Circle{
+            fill: rgba(255, 255, 255, 0.8);
+        }
+
+        &__Arrow{
+            fill: black;
+        }
+    }
+}

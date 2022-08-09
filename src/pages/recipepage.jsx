@@ -1,6 +1,6 @@
 import { SubscriptionCard, RecipeDetails } from "@organisms";
 import { Title } from "@atoms";
-import { Section } from "@molecules";
+import { Section, NutritionalTable } from "@molecules";
 import { useStore } from "@store/store";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
@@ -21,10 +21,10 @@ const RecipePage = () => {
     return (
         <>
             <Section arialabel="Recipe Details">
-                {!isLoading && Recipe != undefined ? <RecipeDetails recipe={Recipe} /> : <Title>Loading Recipe</Title>}
+                {!isLoading && Recipe != undefined ? <RecipeDetails recipe={Recipe} /> : <Title>Recipe Not Found</Title>}
             </Section>
             <Section arialabel="Recipe Video">
-                
+                {!isLoading && Recipe != undefined ? <NutritionalTable recipe={Recipe} /> : null}
             </Section>
             <Section arialabel="Subscription Card">
                 <SubscriptionCard />

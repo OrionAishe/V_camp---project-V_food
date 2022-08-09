@@ -12,6 +12,7 @@ export { default as Section } from "./section/section";
 export { default as RecipeCard } from "./recipeCard/recipeCard";
 export { default as SocialMedia } from "./SocialMedia/SocialMedia";
 export { default as MenuHamburguer } from "./menuHamburguer/menuHamburguer";
+export { default as NutritionalTable } from "./nutritionalTable/nutritionalTable";
 export { default as ArticleAuthor } from "./articleAuthor/articleAuthor";
 export { default as MenuSlider } from "./menuSlider/menuslider";
 export { default as SocialImg } from "./socialImg/socialImg";
@@ -29,5 +30,6 @@ export { default as ChefIllustration } from "./chefIllustration/chefIllustration
 export { default as Categories } from "./categories/categories";
 export { default as CategoryCard } from "./categoryCard/categoryCard";
 export { default as RecipesGrid } from "./recipesGrid/recipesGrid";
+export { default as RecipeImage } from "./recipeImage/recipeImage";
 export { default as Carousel } from "./Carousel/Carousel";
 export { default as IFrameYTB } from "./IFrameYTB/IFrameYTB";
