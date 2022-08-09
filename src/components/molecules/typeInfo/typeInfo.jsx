@@ -3,7 +3,7 @@ import styles from "./typeInfo.module.scss";
 export default function TypeInfo(props) {
   return (
     <p
-      className={styles["cardInfo__textType"]}
+      className={props.className != null ? props.className : styles["cardInfo__textType"]}
       style={{ backgroundColor: props.background }}
     >
       <span className={styles.cardInfo__Image}>

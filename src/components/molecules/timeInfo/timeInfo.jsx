@@ -2,8 +2,8 @@ import styles from "./timeInfo.module.scss";
 
 export default function TimeInfo(props) {
   return (
-    <p
-      className={styles["cardInfo__textTime"]}
+    <div
+      className={props.className != null ? props.className : styles["cardInfo__textTime"]}
       style={{ backgroundColor: props.background }}
     >
       <svg
@@ -22,8 +22,10 @@ export default function TimeInfo(props) {
           fill="black"
         />
       </svg>
-
-      {props.time}
-    </p>
+      <div className={props.insideclassName != null && props.insideclassName}>
+        {props.name != null && <p className={styles.textTime__Title}>{props.name}</p>}
+        <p>{props.time}</p>
+      </div>
+    </div>
   );
 }

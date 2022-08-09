@@ -20,8 +20,11 @@ const RecipePage = () => {
 
     return (
         <>
-            <Section arialabel="Recipe">
+            <Section arialabel="Recipe Details">
                 {!isLoading && Recipe != undefined ? <RecipeDetails recipe={Recipe} /> : <Title>Loading Recipe</Title>}
+            </Section>
+            <Section arialabel="Recipe Video">
+                
             </Section>
             <Section arialabel="Subscription Card">
                 <SubscriptionCard />

@@ -4,7 +4,10 @@ const ArticleAuthor = (props) => {
   return (
     <div className={props.className}>
       <img src={props.authorImg} className={styles.authorImg} />
-      <p className={styles.authorName}>{props.articleAuthor}</p>
+      <div>
+        <p className={styles.authorName}>{props.articleAuthor}</p>
+        {props.date != null && <p className={props.dateclassName}>{props.date}</p>}
+      </div>
     </div>
   );
 };
