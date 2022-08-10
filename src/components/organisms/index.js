@@ -3,6 +3,7 @@ export { default as ContactForm } from "./contactForm/contactForm";
 export { default as Footer } from "./footer/footer";
 export { default as Header } from "./header/header";
 export { default as InstaSection } from "./instaSection/instaSection";
+export { default as IngredientsTable } from "./ingredientsTable/ingredientsTable";
 export { default as NotFound } from "./notfound/notfound";
 export { default as Router } from "./Router/Router";
 export { default as SubscriptionCard } from "./subscriptionCard/subscriptionCard";

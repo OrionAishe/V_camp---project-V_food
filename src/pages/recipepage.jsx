@@ -1,4 +1,4 @@
-import { SubscriptionCard, RecipeDetails, RecipeVideo } from "@organisms";
+import { SubscriptionCard, RecipeDetails, RecipeVideo, IngredientsTable } from "@organisms";
 import { Title } from "@atoms";
 import { Section } from "@molecules";
 import { useStore } from "@store/store";
@@ -25,6 +25,9 @@ const RecipePage = () => {
             </Section>
             <Section arialabel="Recipe Video">
                 {!isLoading && Recipe != undefined ? <RecipeVideo /> : null}
+            </Section>
+            <Section arialabel="Ingredients Table">
+                {!isLoading && Recipe != undefined ? <IngredientsTable /> : null}
             </Section>
             <Section arialabel="Subscription Card">
                 <SubscriptionCard />
