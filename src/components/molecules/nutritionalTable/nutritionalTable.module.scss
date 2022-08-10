@@ -1,4 +1,4 @@
-.Table{
+.Table {
     background-color: #E7FAFE;
     border-radius: 30px;
     width: 100%;
@@ -6,17 +6,18 @@
     padding: 32px;
     position: relative;
 
-    &__Title{
+    &__Title {
         font-size: 24px;
         font-weight: 600;
     }
 
-    &__List{
+    &__List {
         list-style-type: none;
         padding: 0;
         font-weight: 500;
 
-        & li{
+
+        & li {
             display: flex;
             justify-content: space-between;
             padding: 16px 0;
@@ -24,20 +25,28 @@
         }
     }
 
-    .List{
-        &__Title{
+    .List {
+        &__Title {
             opacity: 0.6;
             font-size: 16px;
         }
 
-        &__Number{
+        &__Number {
             font-size: 16px;
         }
     }
 
-    &__Description{
+    &__Description {
         opacity: 0.6;
-        bottom: 32px;
-        position: absolute;
+        padding-top: 16px;
+    }
+}
+
+@media(min-width:945px) {
+    .Table {
+        &__Description {
+            bottom: 32px;
+            position: absolute;
+        }
     }
 }

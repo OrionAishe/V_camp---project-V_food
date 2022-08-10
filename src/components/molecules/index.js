@@ -21,6 +21,7 @@ export { default as HighlightInfo } from "./highlightInfo/highlightInfo";
 export { default as TypeInfo } from "./typeInfo/typeInfo";
 export { default as TimeInfo } from "./timeInfo/timeInfo";
 export { default as HighlightAuthor } from "./highlightAuthor/highlightAuthor";
+export { default as ingredientsTable } from "./ingredientsTable/ingredientsTable";
 export { default as InstaCard } from "./instaCard/instaCard";
 export { default as InstaCardHeader } from "./instaCardHeader/instaCardHeader";
 export { default as InstaCardMedia } from "./instaCardMedia/instaCardMedia";

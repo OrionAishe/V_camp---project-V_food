@@ -3,10 +3,10 @@
     flex-direction: column;
     gap: 5%;
     height: 100vh;
+    margin-bottom: 80px;
 
     &__Description{
         opacity: 0.6;
-        padding-top: 80px;
     }
 }
 
@@ -15,5 +15,6 @@
         display: grid;
         grid-template-columns: 70% 25%;
         gap: 5%;
+        height: 100%;
     }
 }
