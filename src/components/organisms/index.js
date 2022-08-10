@@ -11,3 +11,4 @@ export { default as ChefSection } from "./chefSection/chefSection";
 export { default as CategoriesSection } from "./categoriesSection/categoriesSection";
 export { default as RecipesCarousel } from "./recipesCarousel/recipesCarousel";
 export { default as RecipeDetails } from "./recipedetails/recipedetails";
+export { default as RecipeVideo } from "./recipeVideo/recipeVideo";

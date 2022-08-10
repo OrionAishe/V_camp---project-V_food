@@ -1,0 +1,19 @@
+.recipeVideo{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    height: 100vh;
+
+    &__Description{
+        opacity: 0.6;
+        padding-top: 80px;
+    }
+}
+
+@media(min-width:945px){
+    .recipeVideo{
+        display: grid;
+        grid-template-columns: 70% 25%;
+        gap: 5%;
+    }
+}

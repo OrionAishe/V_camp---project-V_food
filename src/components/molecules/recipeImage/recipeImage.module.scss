@@ -1,19 +1,19 @@
 .Image{
     position: relative;
-    width: 70%;
+    width: 100%;
     height: max-content;
 
 
     &__Background{
-    width: 840px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
     border-radius: 30px;
     }
 
     &__Play{
         position: absolute;
-        top: 240px;
-        left: 360px;
+        top: calc(50% - 60px);
+        left: calc(50% - 60px);
         border-radius: 60px;
         backdrop-filter: blur(20px);
     }

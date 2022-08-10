@@ -98,19 +98,25 @@
 
         &__Details{
             flex-direction: column;
-            align-items: flex-start;
-            gap: 20px;
+            align-items: center;
+
         }
 
         &__Author{
-            padding: 0;
+            padding: 32px 0;
+            border-right: none;
+            border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
         }
         &__Time{
-            padding: 0;
+            padding: 32px 0;
+            border-right: none;
+            border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
         }
 
         &__Type{
-            padding: 0;
+            padding: 32px 0;
+            border-right: none;
+            border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
         }
     }
 }
