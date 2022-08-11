@@ -27,7 +27,7 @@ const RecipePage = () => {
                 {!isLoading && Recipe != undefined ? <RecipeVideo /> : null}
             </Section>
             <Section arialabel="Ingredients Table">
-                {!isLoading && Recipe != undefined ? <IngredientsTable /> : null}
+                {!isLoading && Recipe != undefined ? <IngredientsTable recipes={Recipes} /> : null}
             </Section>
             <Section arialabel="Subscription Card">
                 <SubscriptionCard />

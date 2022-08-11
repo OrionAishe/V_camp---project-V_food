@@ -1,0 +1,49 @@
+.Ingredients{
+    display: grid;
+    grid-template-areas: 'ingredients'
+    'directions'
+    'ads'
+    'recipes';
+    gap: 2.5rem;
+
+    &__List{
+        grid-area: ingredients;
+    }
+
+    &__Directions{
+        grid-area: directions;
+    }
+
+    &__recipesStack{
+        grid-area: recipes;
+        align-self: center;
+    }
+
+    &__ads{
+        grid-area: ads;
+        align-self: center;
+    }
+}
+
+@media(min-width:800px){
+    .Ingredients{
+        display: grid;
+        grid-template-columns: 1fr 1.3fr;
+        grid-template-areas: 'ingredients ingredients'
+        'ingredients ingredients'
+        'directions direction'
+        'ads recipes';
+        gap: 50px;
+    }
+}
+
+@media(min-width:1024px){
+    .Ingredients{
+        display: grid;
+        grid-template-columns: 1.8fr 1fr;
+        grid-template-areas: 'ingredients recipes'
+        'ingredients ads'
+        'directions .';
+        gap: 50px;
+    }
+}

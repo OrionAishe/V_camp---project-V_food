@@ -1,3 +1,45 @@
-.List{
-    
+.CompletionList {
+    width: 95%;
+
+    .List {
+        list-style: none;
+        padding: 0;
+
+        &__Title {
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: -0.04em;
+        }
+
+        &__Item {
+            display: flex;
+            padding: 33px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        &__Checkbox {
+            display: block;
+            width: 24px;
+            height: 24px;
+            margin-right: 24px;
+            border: 1px rgba(0, 0, 0, 0.1) solid;
+            border-radius: 60px;
+        }
+    }
+
+    .--active {
+        color: rgba(0, 0, 0, 0.6);
+        text-decoration: line-through;
+
+        & .List {
+            &__Checkbox {
+                background-image: url('/images/checkbox.png');
+                opacity: 1;
+            }
+        }
+    }
 }
