@@ -5,6 +5,8 @@ $breakpoint-large: 1024px;
   background: var(--global-background-color);
   border: 0;
   text-align: left;
+  text-decoration: none;
+  color: var(--primary-text-color);
   gap: 1rem;
   width: 100%;
   grid-template-areas:

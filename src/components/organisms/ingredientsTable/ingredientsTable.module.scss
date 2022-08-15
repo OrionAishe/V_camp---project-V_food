@@ -17,6 +17,10 @@
     &__recipesStack{
         grid-area: recipes;
         align-self: center;
+
+        &Title{
+            margin-bottom: 20px;
+        }
     }
 
     &__ads{

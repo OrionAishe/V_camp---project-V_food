@@ -2,6 +2,7 @@ import TimeInfo from "@molecules/timeInfo/timeInfo";
 import TypeInfo from "@molecules/typeInfo/typeInfo";
 import styles from "./Card.module.scss";
 import { useStore } from "@store/store";
+import { Link } from "react-router-dom";
 
 export default function Card({ card, background, full }) {
   const [store, dispatch] = useStore();
@@ -9,7 +10,7 @@ export default function Card({ card, background, full }) {
   function handleLike(event) {
     dispatch("TOOGLE_HEART_RECIPES", card.id);
   }
-
+console.log(card);
   const classesNames = [styles["card"]];
   if (background) classesNames.push(styles["card--background"]);
   if (full) classesNames.push(styles["card--full"]);
@@ -22,18 +23,17 @@ export default function Card({ card, background, full }) {
   return (
     <li className={classesNames.join(" ")}>
       <div className={styles["card__container"]}>
-        <a
+        <Link
           className={styles["card__button"]}
           tabIndex="0"
-          href=""
-          target="__blank"
+          to={"/" + card.id}
         >
           <img
             src={card.image}
             alt={"Ilustration of  " + card.title}
             className={styles["card__image"]}
           />
-        </a>
+        </Link>
         <button className={styles["card__heart"]} onClick={handleLike}>
           <img
             src="./images/card-heart.svg"
@@ -43,9 +43,8 @@ export default function Card({ card, background, full }) {
         </button>
       </div>
       <div className={styles["card__info"]}>
-        <a
-          href=""
-          target="_blank"
+        <Link
+          to={"/" + card.id}
           className={styles["card__info__link"]}
           tabIndex="-1"
         >
@@ -54,7 +53,7 @@ export default function Card({ card, background, full }) {
             <TimeInfo time={card.time} />
             <TypeInfo type={card.type} />
           </div>
-        </a>
+        </Link>
       </div>
     </li>
   );

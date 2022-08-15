@@ -14,7 +14,7 @@ const RecipeImage = ({ recipe }) => {
         const data = Recipes.recipes.find((recipe) => recipe.id == Params.Recipename);
         setLoading(false);
         setRecipe(data);
-    }, [Recipes]);
+    }, [Recipes, Params.Recipename]);
 
     return (
         <div className={styles.Image}>

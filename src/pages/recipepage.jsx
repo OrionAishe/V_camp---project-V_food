@@ -16,7 +16,7 @@ const RecipePage = () => {
         const data = Recipes.recipes.find((recipe) => recipe.id == Params.Recipename );
         setLoading(false);
         setRecipe(data);
-    }, [Recipes])
+    }, [Params.Recipename, Recipes])
 
     return (
         <>
