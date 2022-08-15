@@ -22,12 +22,32 @@
         }
 
         &__Checkbox {
-            display: block;
+            display: flex;
             width: 24px;
             height: 24px;
             margin-right: 24px;
             border: 1px rgba(0, 0, 0, 0.1) solid;
             border-radius: 60px;
+        }
+
+        &__Direction {
+            padding: 33px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+            &:hover{
+                cursor: pointer;
+            }
+
+            &Title {
+                display: flex;
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+        }
+
+        &__Description {
+            opacity: 0.6;
+            padding: 24px;
         }
     }
 
